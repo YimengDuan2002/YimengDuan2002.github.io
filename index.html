@@ -5,47 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Introduction</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>  
-      <div class="container">  
-        <nav class="flex items-centre justify-between">  
-          <div class="left flex justify-right">  
-            <div class="logo">  
-              <img src="./images/logo.png" width="50px" alt="logo">  
-            </div>  
-            <div>  
-              <a href="#">Home</a>  
-              <a href="#">About</a>  
-              <a href="#">Services</a>  
-              <a href="#">Blog</a>
-              <a href="#">More</a>  
-            </div>  
-          </div>  
-          <div class="right">  
-            <button class="btn btn-primary">Contact</button>  
-          </div>  
+    <header>
+        <h1>Welcome to My Personal Website</h1>
+        <nav>
+            <a href="#about">About Me</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
         </nav>
-      </div>  
     </header>
-    <div class="hero flex items-centre justify-between">
-      <div class="left flex-1 justify-center">
-        <img src="./images/main-img.png" alt="Profile">
-      </div>
-      <div class="right flex-1">
-        <h6>Akshat Sharma</h6>
-        <h1>I'm a Web<br> <span>Developer</span></h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque illum nam nobis, minima
-        laudantium fugit sequi nostrum quod impedit, beatae necessitatibus praesentium optio labore
-        nemo!</p>
-        <div>
-          <button class="btn btn-secondary">DOWNLOAD CV</button>
-        </div>
-      </div>
-    </div>
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hello! I'm [Your Name], a [Your Profession]. I love [Your Interests].</p>
+    </section>
+    <section id="projects">
+        <h2>Projects</h2>
+        <ul>
+            <li>Project 1: <a href="#">Link to project</a></li>
+            <li>Project 2: <a href="#">Link to project</a></li>
+            <li>Project 3: <a href="#">Link to project</a></li>
+        </ul>
+    </section>
+    <section id="contact">
+        <h2>Contact</h2>
+        <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+    <footer>
+        <p>&copy; 2024 [Your Name]. All rights reserved.</p>
+    </footer>
     <script src="script.js"></script>
 </body>
 </html>
-
 
