@@ -7,30 +7,135 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 
-
 <body>
     <header>
+        <div id="google_translate_element"></div>
+        <script type="text/javascript">
+            function googleTranslateElementInit() {
+                new google.translate.TranslateElement(
+                    {pageLanguage: 'en'},
+                    'google_translate_element'
+                );
+            }
+        </script>
+        <script type="text/javascript"
+            src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+        </script>
         <h1>Yimeng Duan's Personal Page</h1>
         <nav>
             <a href="#about">About Me</a>
-            <a href="#projects">Projects</a>
+            <a href="#cv">CV</a>
             <a href="#contact">Contact</a>
         </nav>
     </header>
 
     <section id="about">
-        <h2>About Me</h2>
-        <p>Hello! I'm Yimeng Duan, a student. I love [Your Interests].</p>
+        <div class="text">
+            <h2>About Me</h2>
+            <p>Hello! I'm Yimeng Duan. I am currently a Master Student at Johns Hopkins University majoring in Data Science</p>
+            <p>
+                <img src="https://i.ibb.co/6tGkYB5/email-icon.png" alt="Email Icon" style="width:21px;height:21px;vertical-align:middle;">
+                yimengduan0813@gmail.com
+                <a href="mailto:yimengduan0813@gmail.com">Email Me</a>
+            </p>
+            <p>
+                <img src="https://i.ibb.co/KjR2bCx/phone-icon.png" alt="Phone Icon" style="width:21px;height:21px;vertical-align:middle;">
+                +8613245294663
+                <a href="sms:+861324529663">Text Me</a>
+            </p>
+            <p>
+                <img src="https://i.ibb.co/3WY2sbS/location-icon.png" alt="Location Icon" style="width:21px;height:21px;vertical-align:middle;">
+                No.169 Yudao Street, Nanjing, China
+                <a href="https://www.google.com/maps?q=御水湾花园">My Address</a>
+            </p>
+        </div>
+        <div class="image">
+            <img src="https://i.ibb.co/dtWLHtD/profile.jpg" alt="Yimeng Duan" class="profile-pic">
+        </div>
     </section>
 
+    <section id="cv">
+        <h2>CV</h2>
+        <button type="button" class="collapsible">Education</button>
+        <div class="content">
+            <p>
+                <strong>New York University, New York, NY</strong><br>
+                B.A. Joint Major in Mathematics and Computer Science<br>
+                09/2020 - 05/2024
+            </p>
+        </div>
 
-    <section id="projects">
-        <h2>Projects</h2>
-        <ul>
-            <li>Project 1: <a href="#">Link to project</a></li>
-            <li>Project 2: <a href="#">Link to project</a></li>
-            <li>Project 3: <a href="#">Link to project</a></li>
-        </ul>
+        <button type="button" class="collapsible">Work Experience</button>
+        <div class="content">
+            <p>
+                <strong>Software Development Engineer Intern</strong><br>
+                China Unicom Digital Tech Co., Ltd., Nanjing, China<br>
+                06/2023 - 08/2023<br>
+                • Assisted in developing the functionality for permission management, enabling efficient viewing, adding, modifying, and deleting of permissions.<br>
+                • Developed a user-friendly interface for permission management to ensure ease of use for administrators.<br>
+                • Tested the functionality of the IoT Platform's real-time database.<br>
+                • Development tools: IntelliJ IDEA, Navicat, MQTT.fx, VUE, MySQL
+            </p>
+            <p>
+                <strong>Software Testing Intern</strong><br>
+                China Unicom Digital Tech Co., Ltd., Nanjing, China<br>
+                06/2022 - 08/2022<br>
+                • Underwent comprehensive training in industry-standard software development best practices.<br>
+                • Executed unit tests, recorded outcomes, and provided feedback to the development team.<br>
+                • Participated in project meetings and maintained detailed records of the proceedings.
+            </p>
+            <p>
+                <strong>Data Analytics Intern</strong><br>
+                Shenwan Hongyuan Group Co., Ltd., Nanjing, China<br>
+                12/2021 - 01/2022<br>
+                • Researched Ovodan’s corporate affiliations by reviewing its annual report and board information, then organized the research data into an Excel spreadsheet.<br>
+                • Analyzed the information with spreadsheet tools and conducted preliminary research for the investment plan by determining the structure and controllers of the group.
+            </p>
+        </div>
+
+        <button type="button" class="collapsible">Projects</button>
+        <div class="content">
+            <p>
+                <strong>CollgePro Mobile Application</strong><br>
+                New York University, New York, NY<br>
+                09/2023<br>
+                • Led the development team in building the mobile application to provide a platform for students to search and review college counselors.<br>
+                • Implemented MongoDB as the database solution, enabling efficient storage, retrieval, and management of user-generated content and reviews.<br>
+                • Development Tools: Flask, HTML, CSS, MongoDB
+            </p>
+            <p>
+                <strong>Text Mining Project</strong><br>
+                New York University, New York, NY<br>
+                07/2023<br>
+                • Pre-processed the text documents and generated a document-term matrix and a TF-IDF matrix for each folder of documents.<br>
+                • Plotted the clusters generated and induced the topic of each original folder.<br>
+                • Evaluated the clustering algorithms with confusion matrix and F-score.<br>
+                • Development tools: Java, Stanford CoreNLP
+            </p>
+            <p>
+                <strong>Text Mining Project on Flight Data</strong><br>
+                New York University, New York, NY<br>
+                05/2023 - 08/2023<br>
+                • Spearheaded a research initiative to create an intricate Natural Language Processing (NLP) model incorporating Twitter and local news data, utilizing techniques such as TF-IDF vectorization and KMeans clustering to detect flight delays and cancellations.<br>
+                • Achieved a commendable 84.21% accuracy despite data imbalances, employing the GPT-3.5 model and meticulous evaluation methods.
+            </p>
+            <p>
+                <strong>Research Assistant, CORONANET Research Project</strong><br>
+                https://www.coronanet-project.org<br>
+                06/2021 - 02/2022<br>
+                • Produced insightful textual analysis, contributing to research findings for pandemic control.<br>
+                • Implemented over 100 COVID-19 policies into the database, enhancing its credibility and supporting research analysis. Enhanced data quality by identifying and rectifying incomplete entries, ensuring accurate and reliable research data.<br>
+                • Development tools: Python, Excel
+            </p>
+        </div>
+
+        <button type="button" class="collapsible">Skills</button>
+        <div class="content">
+            <p>
+                <strong>Computer Skills:</strong> Java, Python, C, C++, HTML, CSS, SQL, MongoDB, VUE, MySQL<br>
+                <strong>Languages:</strong> Chinese (native), English (fluent)
+            </p>
+        </div>
     </section>
 
     <section id="contact">
@@ -49,7 +154,23 @@
     <footer>
         <p>&copy; 2024 Yimeng Duan. All rights reserved.</p>
     </footer>
-    <script src="script.js"></script>
+
+    <script>
+        // JavaScript for collapsible sections
+        document.addEventListener("DOMContentLoaded", function() {
+            var coll = document.getElementsByClassName("collapsible");
+            for (var i = 0; i < coll.length; i++) {
+                coll[i].addEventListener("click", function() {
+                    this.classList.toggle("active");
+                    var content = this.nextElementSibling;
+                    if (content.style.display === "block") {
+                        content.style.display = "none";
+                    } else {
+                        content.style.display = "block";
+                    }
+                });
+            }
+        });
+    </script>
 </body>
 </html>
-
