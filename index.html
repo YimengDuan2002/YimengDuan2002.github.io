@@ -6,6 +6,7 @@
     <title>Personal Introduction</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <header>
         <div id="google_translate_element"></div>
@@ -55,8 +56,7 @@
 
     <section id="cv">
         <h2>CV</h2>
-        <a href="ResumeYimeng2024.pdf" download class="download-link">Download CV as PDF</a>
-
+        <a href="resume.pdf" download class="download-link">Download CV as PDF</a>
         <button type="button" class="collapsible">Education</button>
         <div class="content">
             <p>
@@ -134,7 +134,7 @@
         <div class="content">
             <p>
                 <strong>Computer Skills:</strong> Java, Python, C, C++, HTML, CSS, SQL, MongoDB, VUE, MySQL<br>
-                <strong>Languages:</strong> Chinese
+                <strong>Languages:</strong> Chinese (native), English (fluent)
             </p>
         </div>
     </section>
@@ -156,7 +156,23 @@
         <p>&copy; 2024 Yimeng Duan. All rights reserved.</p>
     </footer>
 
-    <!-- Optional JavaScript -->
-    <script src="script.js"></script>
+    <script>
+        // JavaScript for collapsible sections
+        document.addEventListener("DOMContentLoaded", function() {
+            var coll = document.getElementsByClassName("collapsible");
+            for (var i = 0; i < coll.length; i++) {
+                coll[i].addEventListener("click", function() {
+                    this.classList.toggle("active");
+                    var content = this.nextElementSibling;
+                    if (content.style.display === "block") {
+                        content.style.display = "none";
+                    } else {
+                        content.style.display = "block";
+                    }
+                });
+            }
+        });
+    </script>
 </body>
 </html>
+>
